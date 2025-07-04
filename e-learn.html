@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Declares the document as HTML5 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /> <!-- Sets the character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures responsive scaling on mobile -->
+  <title>E-Learning Platform</title> <!-- Title of the page shown in the browser tab -->
+  <link rel="stylesheet" href="styles.css" /> <!-- External stylesheet -->
+  <script src="script.js" defer></script> <!-- External JavaScript file loaded after DOM is parsed -->
+</head>
+<body>
+  <header>
+    <!-- Website logo -->
+    <div class="logo">E-Learn</div>
+    
+    <!-- Navigation bar with links and search input -->
+    <nav>
+      <a href="#home" class="nav-link">Home</a> <!-- Link to Home section -->
+      <a href="#courses" class="nav-link">Courses</a> <!-- Link to Courses section -->
+      <a href="#video" class="nav-link">Video</a> <!-- Link to Video section -->
+      <input type="text" id="searchInput" placeholder="Search courses..." /> <!-- Search box -->
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home section -->
+    <section id="home" class="page">
+      <div class="hero">
+        <h1>Learn Anytime, Anywhere</h1> <!-- Main heading -->
+        <p>Join our platform to gain skills and knowledge from industry experts.</p> <!-- Subheading -->
+        <button id="exploreBtn">Explore Courses</button> <!-- Button to navigate to Courses -->
+      </div>
+    </section>
+
+    <!-- Courses section (initially hidden) -->
+    <section id="courses" class="page hidden">
+      <h2>Course Listing</h2> <!-- Section heading -->
+      <div id="courseList" class="grid"></div> <!-- Dynamic course cards will appear here -->
+    </section>
+
+    <!-- Video section (initially hidden) -->
+    <section id="video" class="page hidden">
+      <h2>Featured Course Video</h2> <!-- Section heading -->
+      <!-- Removed YouTube embed and added Coming Soon message -->
+      <div class="video-container">
+        <p style="color: gray; font-size: 18px;">Coming Soon...</p> <!-- Placeholder text -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>
